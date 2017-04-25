@@ -6,14 +6,19 @@
 
 <script>
 export default {
+  props: {
+    id: Number,
+    default: 1,
+    validator: value => value >= 1
+  },
   data() {
     return {
       character: {}
     }
   },
   methods: {
-    fetchCharacter() {
-      fetch('http://swapi.co/api/people/1', {
+    fetchCharacter(id) {
+      fetch(`http://swapi.co/api/people/${id}`, {
         method: 'GET'
       })
         .then(response => response.json())
@@ -21,7 +26,7 @@ export default {
     }
   },
   created() {
-    this.fetchCharacter()
+    this.fetchCharacter(this.id)
   }
 }
 </script>
