@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h3>{{title}}</h3>
-    <button class="btn btn-primary" @click="fetchCharactor">Test Fetch</button>
+    <button class="btn btn-primary" @click="fetchCharacter">Test Fetch Character</button>
   </div>
 </template>
 
@@ -14,7 +14,7 @@ export default {
     }
   },
   methods: {
-    fetchCharactor() {
+    fetchCharacter() {
       fetch('http://swapi.co/api/people/1', {
         method: 'GET'
       })
