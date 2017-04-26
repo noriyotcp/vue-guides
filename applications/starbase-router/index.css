@@ -32,3 +32,11 @@ a {
 .link, .link:hover, .link:visited, .link:active {
   color: #4fc08d;
 }
+
+.item-card {
+  border: 2px solid #4fc08d;
+  border-radius: 4px;
+  padding: 5px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
