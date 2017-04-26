@@ -28,3 +28,7 @@ li {
 a {
   color: #42b983;
 }
+
+.link, .link:hover, .link:visited, .link:active {
+  color: #4fc08d;
+}

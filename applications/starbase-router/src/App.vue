@@ -1,8 +1,11 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <h1></h1>
     <h3>Starbase Router</h3>
+    <h4>
+      <router-link class="link" to="/data/people">Meet the Characters</router-link> |
+      <router-link class="link" to="/data/planets">Explore the Planets</router-link>
+    </h4>
     <router-view></router-view>
   </div>
 </template>
