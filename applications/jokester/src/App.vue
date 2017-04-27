@@ -2,6 +2,8 @@
   <div id="app">
     <img src="./assets/logo.png">
     <h1></h1>
+    Got jokes?
+    {{$store.state}}
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
