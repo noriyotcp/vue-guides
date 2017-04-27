@@ -24,3 +24,10 @@ li {
 a {
   color: #42b983;
 }
+
+.joke-card {
+  border: 2px solid #2c3350;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 5px;
+}
