@@ -1,11 +1,11 @@
 import Vue from 'vue'
-import App from './App.vue'
+import App from './components/App.vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-import Dashboard from './Dashboard.vue'
-import Signin from './Signin.vue'
+import Dashboard from './components/Dashboard.vue'
+import Signin from './components/Signin.vue'
 
 const router = new VueRouter({
   mode: 'history',
