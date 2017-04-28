@@ -5,8 +5,27 @@
 </template>
 
 <script>
+import { firebaseApp } from '../firebaseApp'
+
 export default {
-  name: 'signin'
+  name: 'signin',
+  data() {
+    return {
+      email: '',
+      password: '',
+      error: {
+        message: ''
+      }
+    }
+  },
+  methods: {
+    signIn() {
+      firebaseApp.auth().signInWithEmailAndPassword(this.email, this.password)
+        .catch(error => {
+          this.error = error
+        })
+    }
+  }
 }
 </script>
 
