@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <h1>Dashboard Component</h1>
   </div>
 </template>
