@@ -33,3 +33,8 @@ a {
   top: 60px;
   right: 40px;
 }
+
+.form {
+  padding-left: 10%;
+  padding-right: 10%;
+}
