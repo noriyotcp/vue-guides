@@ -5,7 +5,7 @@
     <hr>
     <AddEvent />
     <hr>
-    {{$store.state}}
+    {{$store.state.events}}
   </div>
 </template>
 
