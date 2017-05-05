@@ -1,13 +1,22 @@
 <template>
   <div>
     <h1>Dashboard Component</h1>
+    <button class="btn btn-danger btn-sm signout-btn" @click="signOut">Sign Out</button>
     {{$store.state}}
   </div>
 </template>
 
 <script>
+import { firebaseApp } from '../firebaseApp'
+
 export default {
-  name: 'dashboard'
+  name: 'dashboard',
+  methods: {
+    signOut() {
+      this.$store.dispatch('signOut')
+      firebaseApp.auth().signOut()
+    }
+  }
 }
 </script>
 
