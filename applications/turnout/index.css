@@ -5,6 +5,8 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 
 h1, h2 {
@@ -23,4 +25,11 @@ li {
 
 a {
   color: #42b983;
+}
+
+.signout-btn {
+  position: absolute;
+  text-align: right;
+  top: 60px;
+  right: 40px;
 }
