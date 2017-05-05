@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { firebaseApp } from '../firebaseApp'
+import { firebaseApp, eventsRef } from '../firebaseApp'
 import AddEvent from './AddEvent.vue'
 
 export default {
@@ -24,6 +24,15 @@ export default {
 
   components: {
     AddEvent
+  },
+  mounted() {
+    eventsRef.on('value', snap => {
+      let events = []
+      snap.forEach(event => {
+        events.push(event.val())
+      })
+      this.$store.dispatch('setEvents', events)
+    })
   }
 }
 </script>
