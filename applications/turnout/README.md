@@ -16,3 +16,6 @@ npm run build
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Config for Firebase
+Copy from ``firebaseApp.js.sample`` to ``firebaseApp.js`` and set your own configuration.
